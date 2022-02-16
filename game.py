@@ -261,7 +261,6 @@ def gameover():
 		lbl4.configure(text = "民草が遠くまで離れる時間も稼げた！そなたは最高の陰陽師だ！")
 
 	lbl4.place(anchor=tkinter.N, x=400, y=300)
-	lbl5.place(anchor=tkinter.N, x=400, y=500)
 
 def btn2clk():
 	global gamestart, count, paddleon, px, py, teki1on, t1x, t1y, x_houkou1, y_houkou1, teki2on, t2x, t2y, x_houkou2, y_houkou2, point, speed, ojamaon, ox, oy, x_houkou3, y_houkou3, size_x, size_y, max
@@ -299,7 +298,6 @@ def btn2clk():
 	lbl2.place_forget()
 	lbl3.place_forget()
 	lbl4.place_forget()
-	lbl5.place_forget()
 	btn2.place_forget()
 	btn3.place_forget()
 	canvas.delete("BG2")
@@ -330,7 +328,6 @@ lbl1 = tkinter.Label(root, text="防いだ回数 "+ str(point), font=("MS明朝"
 lbl2 = tkinter.Label(root, text="そなたの得点", font=("MS明朝", "50"), fg="#eaf4fc", bg="#302833")
 lbl3 = tkinter.Label(root, text=point, font=("MS明朝", "50"), fg="#eaf4fc", bg="#302833")
 lbl4 = tkinter.Label(root, text="結果", font=("MS明朝", "20"), fg="#eaf4fc", bg="#302833")
-lbl5 = tkinter.Label(root, text="1424191268 村田りか\n画像・イラスト：unsplash 様、イラストAC 様、ぱくたそ 様\n音楽・効果音：おとわび 様、効果音ラボ 様、無料効果音で遊ぼう 様", font=("MS明朝", "10"), fg="#eaf4fc", bg="#302833")
 
 btn1 = tkinter.Button(root, text="開始", font=("MS明朝", "20", "bold"), width=10, bg="#a0d8ef", command=btn1clk)
 btn2 = tkinter.Button(root, text="再挑戦", font=("MS明朝", "20", "bold"), width=10, bg="#a0d8ef", command=btn2clk)
